@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Farah Ibrahim</title> 
+        <link rel="stylesheet" href="home_page.css"/>
+
+        <script type="text/javascript">
+          function showDate()
+          {
+            var d = new Date();
+            var currDate = d.getDate();
+            var currMonth = d.getMonth() + 1;
+            var currYear = d.getFullYear();
+            document.write(currDate + "." + currMonth + "." + currYear);
+          }
+        </script>
+    </head>
+
+    <body>
+
+      <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreTxt = document.getElementById("more");
+          var btnTxt = document.getElementById("myBtn");
+
+          if (dots.style.display === "none") 
+          {
+            dots.style.display = "inline";
+            btnTxt.innerHTML = "Read more";
+            moreTxt.style.display = "none";
+          }
+          else {
+            dots.style.display = "none";
+            btnTxt.innerHTML = "Read less";
+            moreTxt.style.display = "inline";
+          }
+        }
+      </script>
+
+      <script type="text/javascript">showDate();</script>
+
+    <section>
+    
+      <div id="bg1">
+        <h1>Introduction</h1>
+        <br>
+        <img id="myImage" onclick="switchImage()" src="./images/froggy.gif" alt="Animated Hello Frog GIF" class="center">
+        <br>
+        <p2>Click the image GIF to change to my personal picture.</p2>
+
+        <script>
+          function switchImage() 	{
+              var image = document.getElementById('myImage');
+              if (image.src.match("myPic")) {
+                image.src = "./images/froggy.gif";
+            } 
+              else {
+                image.src = "./images/myPic.webp"; 
+              }
+        }
+        </script>
+        <br><br>
+
+        <div>
+          <p>Greetings, My Name Is Farah Ibrahim And I Am 18 Years Old. I Am A Second Year RIT Dubai Student, Majoring In CIT (Computer And Information Technologies) <span id="dots">...</span>
+          <br> <span id="more">I Am Egyptian Residing In UAE-Dubai. I Was Born And Raised In Dubai. Growing Up I Have Been Moving All Around The UAE Emirates, Transferring To Different Schools Every Year. As Of Now I Am Residing In Sharjah, Which Is Approximately 30 Minutes Away From RIT Dubai.
+          <br> I have Been Through A Lot Of Hardships And Challenges To Reach To Where I Am Today, A Second Year CIT Student. I Do Have To Admit, The First Year Was Quite Hard, As I Suddenly Graduated High School And Went Into A Completely New Enviroment, Unaware Of What I was Going To Face Along The Rest Of The First Year, Especially When It Was All Online.</span>
+          <br></p>
+          <br>
+          <button onclick="myFunction()" id="myBtn">Read More</button>
+          <br><br>
+        </div>
+
+      </div>
+    
+
+    </section>
+
+        <br><br><br>
+        <h3>Fall 2211 Courses</h3>
+        <br>
+        <table>
+        <thead>
+          <tr>
+            <td>Course</td>
+            <td>Day</td>
+            <td>Time</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>NSSA 220</td>
+            <td>UTR</td>
+            <td>10:05 - 11:00</td>
+          </tr>
+          <tr>
+            <td>NSSA 241</td>
+            <td>UT</td>
+            <td>1:05 - 3:05</td>
+          </tr>
+          <tr>
+            <td>ANTH 275</td>
+            <td>MW</td>
+            <td>9:00 - 10:20</td>
+          </tr>
+          <tr>
+            <td>MATH 101</td>
+            <td> MW </td>
+            <td>10:30 - 11:50</td>
+          </tr>
+          <tr>
+            <td>ISTE 140</td>
+            <td> MW </td>
+            <td>1:30-2:50</td>
+          </tr>
+          <tr>
+            <td>ISTE 99</td>
+            <td> W </td>
+            <td>3:00-3:55</td>
+          </tr>
+        </tbody>
+        </table>
+        <br>
+
+        <h3>Exercises</h3>
+        <br>
+          <ul class="nav">
+            <li>
+              <a href="https://people.rit.edu/fmi4391/exercises/validated.html">Broken Page Fix</a>
+            </li>
+            <br>
+            <li>
+              <div class="first-media-query">My First Media Query</div>
+            </li>
+            <br>
+            <li>Exercise 3</li>
+            <br>
+          </ul>
+
+        <h3>Projects</h3>
+        <br>
+          <ol>
+            <li>
+              <a href="https://people.rit.edu/fmi4391/140/project1/index.html">Project 1 : Sushi Empire</a>
+            </li>
+            <br>
+            <li>
+              <a href="https://people.rit.edu/fmi4391/140/project2/Home.html">Project 2 : To The Rescue!</a>
+            </li>
+            <br>
+            <li>
+              <a href="https://people.rit.edu/fmi4391/140/project3/index.html">Project 3 : FRSKY Cosmetics</a>
+            </li>
+          </ol>
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+      <div id="bg2">
+        <h3>Contact Information And Social Media:</h3>
+        <br>
+          <dl>
+            <dt>RIT Email:</dt> 
+             <dd>fmi4391@rit.edu</dd>
+             <br>
+            <dt>Personal Email:</dt> 
+             <dd>farooh771@gmail.com</dd>
+             <br>
+            <dt>Phone No.:</dt> 
+             <dd>(+971)50 678 9669</dd>
+             <br>
+            <dt>Personal Instagram:</dt> 
+             <dd>_.jjeonginnout._</dd>
+          </dl>
+          <br>
+          <br>
+      </div>
+    </body>
+</html>
